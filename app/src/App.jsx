@@ -2,6 +2,10 @@ import './App.css'
 import { useEffect, useMemo, useState } from 'react'
 import toolsStrip from './assets/group-1899.png'
 import profilePic from './assets/profilepic.png'
+import sokoroImg from './assets/sokoro.png'
+import spotifyImg from './assets/spotify.png'
+import remotegemzImg from './assets/remotegemz.jpg'
+import scratchImg from './assets/sarctch.webp'
 
 function IconHome(props) {
   return (
@@ -289,7 +293,9 @@ function App() {
                       <span />
                       <span />
                     </div>
-                    <div className="project-window__body" />
+                    <div className="project-window__body">
+                    <img src={sokoroImg} alt="Sokoro app screens" className="project-window__img" />
+                  </div>
                   </div>
                 </div>
               </div>
@@ -316,7 +322,9 @@ function App() {
                       <span />
                       <span />
                     </div>
-                    <div className="project-window__body" />
+                    <div className="project-window__body">
+                    <img src={spotifyImg} alt="Spotify Downloader app" className="project-window__img" />
+                  </div>
                   </div>
                 </div>
               </div>
@@ -353,7 +361,9 @@ function App() {
                       <span />
                       <span />
                     </div>
-                    <div className="project-window__body" />
+                    <div className="project-window__body">
+                    <img src={scratchImg} alt="Sracthch e-commerce app" className="project-window__img" />
+                  </div>
                   </div>
                 </div>
               </div>
@@ -388,7 +398,9 @@ function App() {
                       <span />
                       <span />
                     </div>
-                    <div className="project-window__body" />
+                    <div className="project-window__body">
+                    <img src={remotegemzImg} alt="RemoteGemz website" className="project-window__img" />
+                  </div>
                   </div>
                 </div>
               </div>
