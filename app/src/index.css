@@ -418,6 +418,29 @@ img {
   margin-top: 0.25rem;
 }
 
+.cert-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.cert-badge {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(135deg, rgba(124, 58, 237, 0.5), rgba(249, 168, 255, 0.4));
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 9999px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.cert-badge:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(148, 163, 253, 0.35);
+}
+
 .stack {
   padding-top: 2.4rem;
 }

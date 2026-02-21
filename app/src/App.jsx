@@ -42,11 +42,32 @@ function IconUser(props) {
   )
 }
 
-function IconFolder(props) {
+function IconProjects(props) {
   return (
     <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" {...props}>
       <path
-        d="M4 6h5l2 2h9a1 1 0 0 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1Z"
+        d="M4 4h6v6H4V4Z"
+        stroke="currentColor"
+        strokeWidth="1.8"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M14 4h6v6h-6V4Z"
+        stroke="currentColor"
+        strokeWidth="1.8"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M4 14h6v6H4v-6Z"
+        stroke="currentColor"
+        strokeWidth="1.8"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M14 14h6v6h-6v-6Z"
         stroke="currentColor"
         strokeWidth="1.8"
         strokeLinecap="round"
@@ -82,7 +103,7 @@ function App() {
     () => [
       { id: 'top', href: '#top', label: 'Home', Icon: IconHome },
       { id: 'about', href: '#about', label: 'About', Icon: IconUser },
-      { id: 'projects', href: '#projects', label: 'Projects', Icon: IconFolder },
+      { id: 'projects', href: '#projects', label: 'Projects', Icon: IconProjects },
       { id: 'contact', href: '#contact', label: 'Contact', Icon: IconMail },
     ],
     [],
@@ -226,7 +247,7 @@ function App() {
                   <span>WEB</span>
                 </div>
                 <div className="work-card__body">
-                  <h3 className="work-card__title">Team Tech Studio</h3>
+                  <h3 className="work-card__title">Team Tech Studio (Official)</h3>
                   <p className="work-card__role">Software Engineer Intern</p>
                   <p className="work-card__meta">Dec 2023 – Feb 2024 · Lahore, Pakistan</p>
                   <ul className="work-card__list">
@@ -236,6 +257,84 @@ function App() {
                   </ul>
                 </div>
               </article>
+
+              <article className="card work-card hover:-translate-y-1 hover:shadow-glow-card/80 transition-transform">
+                <div className="work-card__icon" aria-hidden="true">
+                  <span>SEO</span>
+                </div>
+                <div className="work-card__body">
+                  <h3 className="work-card__title">Digital Synergy Management</h3>
+                  <p className="work-card__role">Search Engine Optimization Specialist</p>
+                  <p className="work-card__meta">Feb 2021 – Aug 2021 · Remote</p>
+                  <ul className="work-card__list">
+                    <li>SEO strategy and implementation for client visibility.</li>
+                    <li>Optimization and analytics.</li>
+                  </ul>
+                </div>
+              </article>
+
+              <article className="card work-card hover:-translate-y-1 hover:shadow-glow-card/80 transition-transform">
+                <div className="work-card__icon" aria-hidden="true">
+                  <span>KHL</span>
+                </div>
+                <div className="work-card__body">
+                  <h3 className="work-card__title">Khalo</h3>
+                  <p className="work-card__role">Freelance Internship · Utility App</p>
+                  <p className="work-card__meta">Mar 2022 – Jul 2022 (2 months) · Remote</p>
+                  <ul className="work-card__list">
+                    <li>Built a utility app as a freelance internship project.</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+
+            <header className="section__head" style={{ marginTop: '2.5rem' }}>
+              <h2 className="section__title">Education &amp; Involvement</h2>
+              <p className="section__kicker">
+                Academic background and society membership.
+              </p>
+            </header>
+            <div className="work-grid">
+              <article className="card work-card hover:-translate-y-1 hover:shadow-glow-card/80 transition-transform">
+                <div className="work-card__icon" aria-hidden="true">
+                  <span>CUI</span>
+                </div>
+                <div className="work-card__body">
+                  <h3 className="work-card__title">COMSATS University Islamabad</h3>
+                  <p className="work-card__role">Student</p>
+                  <p className="work-card__meta">Feb 2022 – Present · Lahore, Punjab, Pakistan</p>
+                  <ul className="work-card__list">
+                    <li>Bachelor&apos;s in Software Engineering (BSSE).</li>
+                  </ul>
+                </div>
+              </article>
+              <article className="card work-card hover:-translate-y-1 hover:shadow-glow-card/80 transition-transform">
+                <div className="work-card__icon" aria-hidden="true">
+                  <span>RAS</span>
+                </div>
+                <div className="work-card__body">
+                  <h3 className="work-card__title">RAS · Robotics &amp; Automation Society</h3>
+                  <p className="work-card__role">Member</p>
+                  <p className="work-card__meta">Aug 2023 – Present · Lahore, Punjab, Pakistan</p>
+                  <ul className="work-card__list">
+                    <li>Active member of the university robotics and automation society.</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+
+            <header className="section__head" style={{ marginTop: '2.5rem' }}>
+              <h2 className="section__title">Certifications &amp; Courses</h2>
+              <p className="section__kicker">
+                Completed courses and credentials in development and tools.
+              </p>
+            </header>
+            <div className="cert-grid">
+              <span className="cert-badge">Version Control</span>
+              <span className="cert-badge">Introduction to Mobile Development</span>
+              <span className="cert-badge">Programming with JavaScript</span>
+              <span className="cert-badge">React</span>
+              <span className="cert-badge">Node.js</span>
             </div>
           </div>
         </section>
